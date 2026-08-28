@@ -65,3 +65,5 @@ logs/
 tmp/
 data/
 compose.override.yml
+# Локальные материалы для тестирования интервью
+interview_test.json
