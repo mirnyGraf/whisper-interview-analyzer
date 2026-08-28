@@ -48,10 +48,10 @@ SUPPORTED_LANGUAGES: list[str] = [
 LANGUAGE_CHOICES: list[str] = [AUTO_LANGUAGE, *SUPPORTED_LANGUAGES]
 
 LANGUAGE_LABELS: dict[str, str] = {
-    "auto": "自動偵測 Auto-detect (auto)",
-    "zh": "中文 Chinese (zh)",
+    "auto": "Автоопределение (auto)",
+    "zh": "Китайский (zh)",
     "en": "English (en)",
-    "ja": "日本語 Japanese (ja)",
+    "ja": "Японский (ja)",
     "ko": "한국어 Korean (ko)",
     "fr": "Français (fr)",
     "de": "Deutsch (de)",

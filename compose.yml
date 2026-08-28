@@ -207,6 +207,7 @@ services:
       DEVICE: cuda
       BATCH_SIZE: ${BATCH_SIZE:-4}
       HF_TOKEN: ${HF_TOKEN:-}
+      HF_HUB_DISABLE_XET: ${HF_HUB_DISABLE_XET:-0}
       DIARIZE_HEARTBEAT_INTERVAL: ${DIARIZE_HEARTBEAT_INTERVAL:-30}
     volumes:
       - app-data:/app/data
@@ -242,6 +243,7 @@ services:
       DEVICE: cpu
       BATCH_SIZE: ${BATCH_SIZE:-4}
       HF_TOKEN: ${HF_TOKEN:-}
+      HF_HUB_DISABLE_XET: ${HF_HUB_DISABLE_XET:-0}
       DIARIZE_HEARTBEAT_INTERVAL: ${DIARIZE_HEARTBEAT_INTERVAL:-30}
     volumes:
       - app-data:/app/data

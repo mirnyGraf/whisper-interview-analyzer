@@ -171,7 +171,7 @@ async def share_create(job_id: str, db: DbDep, user: CurrentUserDep):
 
     return Response(
         status_code=200,
-        headers={"HX-Trigger": '{"showToast": {"message": "已產生分享連結", "type": "success"}}', "HX-Refresh": "true"},
+        headers={"HX-Trigger": '{"showToast": {"message": "Ссылка для общего доступа создана", "type": "success"}}', "HX-Refresh": "true"},
     )
 
 

@@ -63,18 +63,18 @@ def _format_relative_time(iso_str: str) -> str:
         seconds = int(diff.total_seconds())
 
         if seconds < 60:
-            return "剛剛"
+            return "только что"
         if seconds < 3600:
             minutes = seconds // 60
-            return f"{minutes} 分鐘前"
+            return f"{minutes} мин. назад"
         if seconds < 86400:
             hours = seconds // 3600
-            return f"{hours} 小時前"
+            return f"{hours} ч. назад"
         days = seconds // 86400
         if days == 1:
-            return "昨天"
+            return "вчера"
         if days < 30:
-            return f"{days} 天前"
+            return f"{days} дн. назад"
         return iso_str[:10]
     except (ValueError, TypeError):
         return iso_str

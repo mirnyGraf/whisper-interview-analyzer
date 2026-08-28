@@ -48,7 +48,7 @@
         <tr x-show="f === 'all' || f === '{{ _role }}' || f === '{{ _status }}'">
           <td class="font-medium">
             {{ user.username }}
-            {% if user.id == current_admin_id %}<span class="badge badge-xs ml-2">您</span>{% endif %}
+            {% if user.id == current_admin_id %}<span class="badge badge-xs ml-2">Вы</span>{% endif %}
           </td>
           <td>
             {% if user.is_admin %}
